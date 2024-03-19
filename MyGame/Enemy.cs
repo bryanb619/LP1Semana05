@@ -17,7 +17,7 @@ namespace MyGame
         public Enemy(string name)
         {
             //this.name = name;   // Name
-            this.name = SetName(name);         
+            SetName(name);         
             health = 100;       // Health
             shield = 0;         // shield
 
@@ -76,8 +76,6 @@ namespace MyGame
         public string SetName(string newName)
         {
 
-            string name = ""; 
-
             if(newName.Length > 8)
             {
 
@@ -95,17 +93,17 @@ namespace MyGame
                     }
                 }
 
-                name = temp; 
+                this.name = temp; 
 
             }
             else
             {
                 // set instance name to new name
-                name = newName; 
+                this.name = newName; 
 
             }
 
-            return name; 
+            return this.name; 
         }
 
 
