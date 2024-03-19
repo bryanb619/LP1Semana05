@@ -13,7 +13,7 @@ namespace RanDice
             // read arg 1 & convert to int
             int s = int.Parse(args[1]);
 
-            // random class
+            // random class & provide seed
             Random random = new Random(s);
 
             // final result of dice 
@@ -29,18 +29,16 @@ namespace RanDice
                 // === DEBUG ===
                 //Console.WriteLine(randomNumber); 
                 // dotnet run --project RanDice -- 3 334
-                
-                diceResult += randomNumber;
 
+                // Add values
+                diceResult += randomNumber;
 
                 // Reset randomNumber value
                 randomNumber = 0;  
             }
 
+            // Print final result
             Console.WriteLine(diceResult); 
-
-
-
         }
     }
 }
