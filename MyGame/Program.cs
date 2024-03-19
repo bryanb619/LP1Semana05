@@ -8,11 +8,14 @@ namespace MyGame
         {
             	
             // creating instance
-            Enemy Loki = new Enemy("Loki"); 
+            Enemy enemy = new Enemy("Loki"); 
 
-            
+            // displaying name
+            Console.WriteLine($"{enemy.GetName()}");
 
-            Console.WriteLine(Loki.GetName()); 
+            enemy.SetName("MasterLoki");
+
+            Console.WriteLine(""); 
 
         }
     }
