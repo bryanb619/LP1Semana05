@@ -13,8 +13,11 @@ namespace MyGame
             // array of enemies & accepts a number of enemies
             Enemy[] enemies = new Enemy[numberOfEnemies];
 
+            // Loop through enemies
+            foreach(Enemy enemy in enemies)
+            {
 
-            
+            }
 
 
 
