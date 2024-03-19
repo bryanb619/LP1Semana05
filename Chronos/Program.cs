@@ -24,19 +24,30 @@ namespace Chronos
             Stopwatch crono2 = new Stopwatch();
 
 
+           
 
 
-            // start crono1
+            // start crono 1
             crono1.Start();
 
             // sleep 0.6 seconds
-            Thread.Sleep(600); 
+            Thread.Sleep(600);
 
-        
+            // start crono 2
+            crono2.Start(); 
+
+            // sleep 0.2 seconds
+            Thread.Sleep(200);
+
+            // === STOP ALL ===
+            crono1.Stop();
+            crono2.Stop(); 
 
 
+            string elapsed1 = String.Format(" ", crono1); 
 
-           // Console.WriteLine("Hello, World!");
+
+           
 
 
         }
