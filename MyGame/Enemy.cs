@@ -2,10 +2,14 @@ namespace MyGame
 {
     public class Enemy
     {
+
+        // EX 6-7
+
         // starting variables
         private string name;
         private float health;
         private float shield; 
+
 
 
 
@@ -17,5 +21,40 @@ namespace MyGame
             shield = 0;         // shield
 
         }
+
+        // EX 8
+
+        // Get character name
+        public string GetName()
+        {
+            return name; 
+        }
+
+        // take damage
+        public void TakeDamage(float damage)
+        {
+            // apply damage on shield
+            shield -= damage; 
+
+            // if no shield
+            if(shield < 0)
+            {
+                float damageStilToInflict = -shield;
+
+
+                shield = 0;
+
+                // remove on health
+                health -= damageStilToInflict; 
+
+                if(health < 0)
+                {
+                    health = 0; 
+                }
+
+            }
+
+        }
+
     }
 }
