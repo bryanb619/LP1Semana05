@@ -7,16 +7,15 @@ namespace MyGame
         private static void Main(string[] args)
         {
 
- 
             // Accept argument and convert srt to int
-            int numberOfEnemies = int.Parse(args[0]); 
+            int numberOfvillains = int.Parse(args[0]); 
 
             // array of enemies & accepts a number of enemies
-            Enemy[] enemies = new Enemy[numberOfEnemies];
+            Enemy[] villains = new Enemy[numberOfvillains];
 
 
             // loop through enemies 
-            for (int i = 0; i < enemies.Length; i++)
+            for (int i = 0; i < villains.Length; i++)
             {
                 // Request input => name of enemy
                 Console.Write($"Nome do inimigo {i+1}: ");
@@ -24,13 +23,13 @@ namespace MyGame
                 // store input
                 string name = Console.ReadLine();
 
-                // store info in enemy index position
-                enemies[i].SetName(name); 
+                // store info in enemy index position & create enemy
+                villains[i] = new Enemy(name);
 
             }
 
             // just to print info
-            foreach(Enemy enemy in enemies)
+            foreach(Enemy enemy in villains)
             {
                 Console.WriteLine
                 ($"{enemy.GetName()} {enemy.GetHealth()} {enemy.GetShield()}"); 
