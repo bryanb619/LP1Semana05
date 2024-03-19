@@ -56,5 +56,27 @@ namespace MyGame
 
         }
 
+
+        // EX 9 
+
+        // Get Health
+        public float GetHealth()
+        {
+            return health; 
+        }
+
+        // Get Shield
+        public float GetShield()
+        {
+            return shield; 
+        }
+
+        // Set name
+        public string SetName()
+        {
+            return name; 
+        }
+
+
     }
 }
