@@ -72,8 +72,14 @@ namespace MyGame
         }
 
         // Set name
-        public string SetName()
+        public string SetName(string newName)
         {
+
+            //if(ne)
+
+            // set instance name to new name
+            this.name = newName; 
+
             return name; 
         }
 
