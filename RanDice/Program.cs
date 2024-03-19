@@ -13,20 +13,23 @@ namespace RanDice
             // read arg 1 & convert to int
             int s = int.Parse(args[1]);
 
-
+            // random class
             Random random = new Random(s);
+
+            // final result of dice 
             int diceResult = 0; 
 
-  
             // loop until n times
             for(int i = 0; i < n; i++)
             {
-                // add random range for n number passed by user args[0]
+                // Get random dice value 
+                // store in a int
                 int randomNumber = random.Next(1, 6);
 
                 // === DEBUG ===
                 //Console.WriteLine(randomNumber); 
                 // dotnet run --project RanDice -- 3 334
+                
                 diceResult += randomNumber;
 
 
