@@ -17,7 +17,6 @@ namespace RanDice
             int diceResult = 0; 
 
   
-
             // loop until n times
             for(int i = 0; i < n; i++)
             {
@@ -28,6 +27,7 @@ namespace RanDice
                 //Console.WriteLine(randomNumber); 
                 // dotnet run --project RanDice -- 3 334
                 diceResult += randomNumber;
+
 
                 // Reset randomNumber value
                 randomNumber = 0;  
