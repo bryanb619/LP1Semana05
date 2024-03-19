@@ -1,12 +1,23 @@
 ﻿using System;
+using System.Diagnostics;
+
+// must use thread
+using System.Threading; 
 
 namespace Chronos
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            // instance crono1 // instance of a class
+            Stopwatch crono1 = new Stopwatch(); 
+
+            // instance crono2
+            Stopwatch crono2 = new Stopwatch();
+
+           // Console.WriteLine("Hello, World!");
         }
     }
 }
