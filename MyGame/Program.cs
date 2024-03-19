@@ -24,15 +24,16 @@ namespace MyGame
                 // store input
                 string name = Console.ReadLine();
 
-                // store info in enemy
+                // store info in enemy index position
                 enemies[i].SetName(name); 
 
             }
 
-
+            // just to print info
             foreach(Enemy enemy in enemies)
             {
-                
+                Console.WriteLine
+                ($"{enemy.GetName()} {enemy.GetHealth()} {enemy.GetShield()}"); 
             }
 
 
@@ -52,8 +53,6 @@ namespace MyGame
             ($"{enemy.GetName()} | HP is: {enemy.GetHealth()}"); 
 
             */ 
-
-
 
         }
     }
