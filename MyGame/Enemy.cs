@@ -84,8 +84,13 @@ namespace MyGame
 
                 foreach(char c in newName)
                 {
-                    temp += c; 
-                    i++; 
+                    if(i < 8)
+                    {
+                        temp += c; 
+                        i++; 
+
+                    }
+                    
                 }
 
                 this.name = temp; 
