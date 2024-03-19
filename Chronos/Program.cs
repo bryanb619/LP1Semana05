@@ -25,8 +25,6 @@ namespace Chronos
 
 
            
-
-
             // start crono 1
             crono1.Start();
 
@@ -41,12 +39,23 @@ namespace Chronos
 
             // === STOP ALL ===
             crono1.Stop();
-            crono2.Stop(); 
+            crono2.Stop();
 
 
-            string elapsed1 = String.Format(" ", crono1); 
+            // Get stopwacthes elapsed time
+
+            // crono1 elapsed time
+            TimeSpan time1 = crono1.Elapsed;
+
+            // crono2 elapsed time
+            TimeSpan time2 = crono2.Elapsed; 
+
+            
 
 
+           // string elapsed1 = String.Format("{0:F3}", crono1);
+
+            //Console.WriteLine(elapsed1); 
            
 
 
