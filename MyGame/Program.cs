@@ -4,7 +4,7 @@ namespace MyGame
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             	
             // creating instance
@@ -13,9 +13,12 @@ namespace MyGame
             // displaying name
             Console.WriteLine($"{enemy.GetName()}");
 
+            // change name
             enemy.SetName("MasterLoki");
 
-            Console.WriteLine(""); 
+            // get name & health
+            Console.WriteLine
+            ($"{enemy.GetName()} | HP is: {enemy.GetHealth()}"); 
 
         }
     }
