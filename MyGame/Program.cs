@@ -7,14 +7,16 @@ namespace MyGame
         private static void Main(string[] args)
         {
 
+ 
             // Accept argument and convert srt to int
             int numberOfEnemies = int.Parse(args[0]); 
 
             // array of enemies & accepts a number of enemies
             Enemy[] enemies = new Enemy[numberOfEnemies];
 
-            // Loop through enemies
-            foreach(Enemy enemy in enemies)
+
+            // loop through enemies 
+            for (int i = 0; i < enemies.Length; i++)
             {
 
             }
