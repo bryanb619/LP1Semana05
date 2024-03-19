@@ -16,14 +16,23 @@ namespace MyGame
 
 
             // loop through enemies 
-            for (int i = 1; i < enemies.Length; i++)
+            for (int i = 0; i < enemies.Length; i++)
             {
                 // Request input => name of enemy
-                Console.Write($"Nome do inimigo {i}: ");
+                Console.Write($"Nome do inimigo {i+1}: ");
 
                 // store input
                 string name = Console.ReadLine();
 
+                // store info in enemy
+                enemies[i].SetName(name); 
+
+            }
+
+
+            foreach(Enemy enemy in enemies)
+            {
+                
             }
 
 
