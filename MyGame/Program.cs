@@ -6,7 +6,14 @@ namespace MyGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            	
+            // creating instance
+            Enemy Loki = new Enemy("Loki"); 
+
+            
+
+            Console.WriteLine(Loki.GetName()); 
+
         }
     }
 }
