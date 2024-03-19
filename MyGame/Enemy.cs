@@ -16,7 +16,8 @@ namespace MyGame
         // constructor
         public Enemy(string name)
         {
-            this.name = name;   // Name
+            //this.name = name;   // Name
+            SetName(name);         
             health = 100;       // Health
             shield = 0;         // shield
 
@@ -75,10 +76,11 @@ namespace MyGame
         public string SetName(string newName)
         {
 
-            string temp=""; 
-
+        
             if(newName.Length > 8)
             {
+
+                string temp=""; 
 
                 int i = 0; 
 
@@ -90,7 +92,6 @@ namespace MyGame
                         i++; 
 
                     }
-                    
                 }
 
                 this.name = temp; 
@@ -103,7 +104,7 @@ namespace MyGame
 
             }
 
-            return name; 
+            return this.name; 
         }
 
 
