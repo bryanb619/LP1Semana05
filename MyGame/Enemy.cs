@@ -75,10 +75,28 @@ namespace MyGame
         public string SetName(string newName)
         {
 
-            //if(ne)
+            string temp=""; 
 
-            // set instance name to new name
-            this.name = newName; 
+            if(newName.Length > 8)
+            {
+
+                int i = 0; 
+
+                foreach(char c in newName)
+                {
+                    temp += c; 
+                    i++; 
+                }
+
+                this.name = temp; 
+
+            }
+            else
+            {
+                // set instance name to new name
+                this.name = newName; 
+
+            }
 
             return name; 
         }
