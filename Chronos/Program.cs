@@ -52,10 +52,10 @@ namespace Chronos
 
 
             // print crono1 elapsed
-            Console.WriteLine($"{time1}"); 
+            Console.WriteLine($"{time1.Seconds:f3}"); 
 
-            Console.WriteLine(time2); 
-
+            // print crono2 elapsed
+            Console.WriteLine($"{time2.Seconds:f3}"); 
 
         }
     }
