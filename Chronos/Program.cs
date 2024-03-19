@@ -48,15 +48,13 @@ namespace Chronos
             TimeSpan time1 = crono1.Elapsed;
 
             // crono2 elapsed time
-            TimeSpan time2 = crono2.Elapsed; 
-
-            
+            TimeSpan time2 = crono2.Elapsed;
 
 
-           // string elapsed1 = String.Format("{0:F3}", crono1);
+            // print crono1 elapsed
+            Console.WriteLine($"{time1}"); 
 
-            //Console.WriteLine(elapsed1); 
-           
+            Console.WriteLine(time2); 
 
 
         }
