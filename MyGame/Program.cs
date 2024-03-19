@@ -10,8 +10,11 @@ namespace MyGame
             // Accept argument and convert srt to int
             int numberOfEnemies = int.Parse(args[0]); 
 
-            // array of enemies
+            // array of enemies & accepts a number of enemies
             Enemy[] enemies = new Enemy[numberOfEnemies];
+
+
+            
 
 
 
