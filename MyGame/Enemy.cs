@@ -128,7 +128,7 @@ namespace MyGame
                 // reset value
                 value = 100; 
             }
-            
+
 
             switch(powerUp)
             {
@@ -137,7 +137,7 @@ namespace MyGame
                     if(health + value > 100f)
                     {
 
-                        health = value; 
+                        health = 100f; 
 
                     }
                     else
@@ -154,7 +154,7 @@ namespace MyGame
                     if(shield + value > 100f)
                     {
 
-                        shield = value; 
+                        shield = 100f; 
 
                     }
                     else
