@@ -125,7 +125,7 @@ namespace MyGame
         /// <param name="value">Value of power up(0-100)</param>
         public void PickupPowerUp(PowerUp powerUp, float value)
         {
-
+       
             // Add logic to value
 
             // detect if value
@@ -175,11 +175,20 @@ namespace MyGame
                 }
             }
 
+            // increment power ups collected
+            powerUpsColl++;
+
 
         }
 
+        // EX 12
+
+
+
+        // Static method to get power ups collected
         public static int GetPowerUpsCollected()
         {
+            // return power ups collected
             return powerUpsColl; 
         }
 
