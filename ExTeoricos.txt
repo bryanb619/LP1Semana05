@@ -1,0 +1,26 @@
+Exercícios Teóricos
+
+Ex 1)
+
+- Talk, Walk, Age, Height
+- Color,Model, Sell, GetSpeed
+- Size, Damage
+- SetSpeed, SetShield
+- Start, Stop, Lap, Reset
+
+Ex 2)
+
+- NameSpace: StopWatchSample
+- Propriedades: ts
+- ts
+- Start
+- Stop
+
+Ex 3)
+
+- StopWatch
+- crono1, crono2
+- Sim
+- Tempo Corrido
+- Não, devemos usar métodos
+- Utilizando métodos da Classe 
