@@ -45,7 +45,8 @@ namespace MyGame
             villains[0].PickupPowerUp(PowerUp.Shield, 15);
 
             Console.WriteLine
-            ($"{villains[0].GetName()} {villains[0].GetHealth()} {villains[0].GetShield()}");
+            ($"{villains[0].GetName()} {villains[0].GetHealth()}" 
+           +  $" {villains[0].GetShield()}");
 
 
 
