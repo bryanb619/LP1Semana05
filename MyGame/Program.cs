@@ -37,21 +37,21 @@ namespace MyGame
 
 
 
-            /* TESTING CODE
+            ///* TESTING CODE
             // creating instance
-            Enemy enemy = new Enemy("Loki"); 
+            Enemy n = new Enemy("Loki"); 
 
             // displaying name
-            Console.WriteLine($"{enemy.GetName()}");
+            Console.WriteLine($"{n.GetName()}");
 
             // change name
-            enemy.SetName("MasterLoki");
+            n.SetName("MasterLoki");
 
             // get name & health
             Console.WriteLine
-            ($"{enemy.GetName()} | HP is: {enemy.GetHealth()}"); 
+            ($"{n.GetName()} | HP is: {n.GetHealth()}"); 
 
-            */ 
+           // */ 
 
         }
     }

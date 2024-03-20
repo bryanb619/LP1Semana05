@@ -93,18 +93,21 @@ namespace MyGame
                     }
                 }
 
-                this.name = temp; 
+                name = temp; 
 
             }
             else
             {
                 // set instance name to new name
-                this.name = newName; 
+                name = newName; 
 
             }
 
-            return this.name; 
+            return name; 
         }
+
+
+        
 
 
     }
