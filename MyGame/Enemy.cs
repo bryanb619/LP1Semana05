@@ -12,9 +12,6 @@ namespace MyGame
         private float health;
         private float shield; 
 
-
-
-
         // constructor
         public Enemy(string name)
         {
@@ -110,9 +107,42 @@ namespace MyGame
 
 
         // EX 11
-        public void PickupPowerUp(PowerUp power, float value)
+
+        /// <summary>
+        ///  Accepts 2 param.
+        ///  1st param: a power up such as health or shield 
+        ///  2nd param: the value of this power up
+        /// /// </summary>
+        /// <param name="powerUp">Power up value</param>
+        /// <param name="value">Value of power up(0-100)</param>
+        public void PickupPowerUp(PowerUp powerUp, float value)
         {
 
+            // Add logic to value
+
+            // detect if value
+
+            // if value is higher than 100
+            if(value > 100)
+            {
+                // reset value
+                value = 100; 
+            }
+
+            switch(powerUp)
+            {
+                case PowerUp.Health:
+                {
+                    
+                    break; 
+                }
+
+                case PowerUp.Shield:
+                {
+
+                    break;
+                }
+            }
 
 
         }
