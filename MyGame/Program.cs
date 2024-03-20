@@ -35,9 +35,21 @@ namespace MyGame
                 ($"{enemy.GetName()} {enemy.GetHealth()} {enemy.GetShield()}"); 
             }
 
+            // take random damage
+            villains[0].TakeDamage(20);
+
+            // get health
+            villains[0].PickupPowerUp(PowerUp.Health, 10);
+
+            // get shield
+            villains[0].PickupPowerUp(PowerUp.Shield, 15);
+
+            Console.WriteLine
+            ($"{villains[0].GetName()} {villains[0].GetHealth()} {villains[0].GetShield()}");
 
 
-            ///* TESTING CODE
+
+            /* TESTING CODE
             // creating instance
             Enemy n = new Enemy("Loki"); 
 
@@ -51,7 +63,7 @@ namespace MyGame
             Console.WriteLine
             ($"{n.GetName()} | HP is: {n.GetHealth()}"); 
 
-           // */ 
+           */ 
 
         }
     }
