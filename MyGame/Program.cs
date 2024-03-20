@@ -8,10 +8,10 @@ namespace MyGame
         {
 
             // Accept argument and convert srt to int
-            int numberOfvillains = int.Parse(args[0]); 
+            int numberOfVillains = int.Parse(args[0]); 
 
             // array of enemies & accepts a number of enemies
-            Enemy[] villains = new Enemy[numberOfvillains];
+            Enemy[] villains = new Enemy[numberOfVillains];
 
 
             // loop through enemies 
@@ -35,22 +35,50 @@ namespace MyGame
                 ($"{enemy.GetName()} {enemy.GetHealth()} {enemy.GetShield()}"); 
             }
 
-            // take random damage
-            villains[0].TakeDamage(20);
 
-            // get health
+            // EX 12
+
+            // take damage
+            villains[0].TakeDamage(60);
+
+            // Power Up Health
             villains[0].PickupPowerUp(PowerUp.Health, 10);
 
-            // get shield
+            // Power Up shield
             villains[0].PickupPowerUp(PowerUp.Shield, 15);
 
-            Console.WriteLine
-            ($"{villains[0].GetName()} {villains[0].GetHealth()}" 
-           +  $" {villains[0].GetShield()}");
+            // Power Up Health
+            villains[0].PickupPowerUp(PowerUp.Health, 10);
+
+
+            // test with more
+            if(villains.Length > 1)
+            {
+                // take damage
+                villains[1].TakeDamage(60);
+
+                // Power Up shield
+                villains[1].PickupPowerUp(PowerUp.Shield, 15);
+
+            }
+
+            
+            // print info
+            for(int i = 0; i < villains.Length; i++)
+            {
+                // print info with power ups
+                Console.WriteLine
+                ($"{villains[i].GetName()} {villains[i].GetHealth()}"
+                + $" {villains[i].GetShield()} {Enemy.GetPowerUpsCollected()}"); 
+            }
+
+        
+           
 
 
 
-            /* TESTING CODE
+
+            /* TESTING CODE 
             // creating instance
             Enemy n = new Enemy("Loki"); 
 

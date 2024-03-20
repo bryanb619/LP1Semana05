@@ -27,8 +27,14 @@ namespace MyGame
             health = 100;       // Health
             shield = 0;         // shield
 
-            powerUpsColl = 0;   // power ups collected
+            //powerUpsColl = 0;   // power ups collected
 
+        }
+
+        // added static constructor
+        static Enemy()
+        {
+            powerUpsColl = 0; 
         }
 
 
@@ -50,9 +56,10 @@ namespace MyGame
             // if no shield
             if(shield < 0)
             {
+                // apply damage left  on health
                 float damageStilToInflict = -shield;
 
-
+                // reset shield
                 shield = 0;
 
                 // remove on health
@@ -188,9 +195,6 @@ namespace MyGame
         // EX 12
 
         
-     
-
-
         // Static method to get power ups collected
         public static int GetPowerUpsCollected()
         {
