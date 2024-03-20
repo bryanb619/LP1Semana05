@@ -1,3 +1,5 @@
+using System;
+
 namespace MyGame
 {
     public class Enemy
@@ -58,7 +60,7 @@ namespace MyGame
         }
 
 
-        // EX 9 
+        // EX 9 - 10
 
         // Get Health
         public float GetHealth()
@@ -107,8 +109,12 @@ namespace MyGame
         }
 
 
-        
+        // EX 11
+        public void PickupPowerUp()
+        {
 
+
+        }
 
     }
 }
