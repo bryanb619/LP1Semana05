@@ -12,6 +12,13 @@ namespace MyGame
         private float health;
         private float shield; 
 
+
+        // EX - 12 
+
+        // Static variables
+        private static int powerUpsColl;
+        
+
         // constructor
         public Enemy(string name)
         {
@@ -169,6 +176,11 @@ namespace MyGame
             }
 
 
+        }
+
+        public static GetPowerUpsCollected()
+        {
+            return powerUpsColl; 
         }
 
     }
