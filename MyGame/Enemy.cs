@@ -178,7 +178,7 @@ namespace MyGame
 
         }
 
-        public static GetPowerUpsCollected()
+        public static int GetPowerUpsCollected()
         {
             return powerUpsColl; 
         }
