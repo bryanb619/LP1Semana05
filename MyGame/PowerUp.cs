@@ -5,8 +5,8 @@ namespace MyGame
     public enum PowerUp
     {
         // Power ups
-        Health = 1 << 0, // 1  => 0001
-        Shield = 1 << 1, // 2 => 0010
+        Health, //= 1 << 0, // 1  => 0001
+        Shield  // = 1 << 1, // 2 => 0010
 
     }
 

@@ -128,17 +128,39 @@ namespace MyGame
                 // reset value
                 value = 100; 
             }
+            
 
             switch(powerUp)
             {
                 case PowerUp.Health:
                 {
-                    
+                    if(health + value > 100f)
+                    {
+
+                        health = value; 
+
+                    }
+                    else
+                    {
+                        health += value; 
+                    }
+
                     break; 
                 }
 
                 case PowerUp.Shield:
                 {
+
+                    if(shield + value > 100f)
+                    {
+
+                        shield = value; 
+
+                    }
+                    else
+                    {
+                        shield += value; 
+                    }
 
                     break;
                 }
