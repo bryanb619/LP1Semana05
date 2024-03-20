@@ -45,17 +45,20 @@ namespace Chronos
             // Get stopwacthes elapsed time
 
             // crono1 elapsed time
-            TimeSpan time1 = crono1.Elapsed;
+            //TimeSpan time1 = crono1.Elapsed;
 
             // crono2 elapsed time
-            TimeSpan time2 = crono2.Elapsed;
+            //TimeSpan time2 = crono2.Elapsed;
+
+            float time1 = crono1.ElapsedMilliseconds / 1000f;
+            float time2 = crono2.ElapsedMilliseconds / 1000f;
 
 
             // print crono1 elapsed
-            Console.WriteLine($"{time1.Seconds:f3}"); 
+            Console.WriteLine($"{time1:f3}"); 
 
             // print crono2 elapsed
-            Console.WriteLine($"{time2.Seconds:f3}"); 
+            Console.WriteLine($"{time2:f3}"); 
 
         }
     }
