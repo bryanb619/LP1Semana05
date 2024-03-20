@@ -110,8 +110,9 @@ namespace MyGame
 
 
         // EX 11
-        public void PickupPowerUp()
+        public void PickupPowerUp(PowerUp power, float value)
         {
+
 
 
         }
