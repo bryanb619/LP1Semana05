@@ -27,7 +27,11 @@ namespace MyGame
             health = 100;       // Health
             shield = 0;         // shield
 
+            powerUpsColl = 0;   // power ups collected
+
         }
+
+
 
         // EX 8
 
@@ -183,6 +187,8 @@ namespace MyGame
 
         // EX 12
 
+        
+     
 
 
         // Static method to get power ups collected
