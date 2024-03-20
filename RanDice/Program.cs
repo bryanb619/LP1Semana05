@@ -24,7 +24,7 @@ namespace RanDice
             {
                 // Get random dice value 
                 // store in a int
-                int randomNumber = random.Next(1, 6);
+                int randomNumber = random.Next(1, 7);
 
                 // === DEBUG ===
                 //Console.WriteLine(randomNumber); 
