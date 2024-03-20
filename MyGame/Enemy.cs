@@ -112,6 +112,7 @@ namespace MyGame
         ///  Accepts 2 param.
         ///  1st param: a power up such as health or shield 
         ///  2nd param: the value of this power up
+        ///  Uses both info and applies value to the power up
         /// /// </summary>
         /// <param name="powerUp">Power up value</param>
         /// <param name="value">Value of power up(0-100)</param>
@@ -134,14 +135,15 @@ namespace MyGame
             {
                 case PowerUp.Health:
                 {
+                    // Check if health + value > 100f
                     if(health + value > 100f)
                     {
-
+                        // reset health
                         health = 100f; 
 
                     }
                     else
-                    {
+                    {   // add to health
                         health += value; 
                     }
 
@@ -150,15 +152,15 @@ namespace MyGame
 
                 case PowerUp.Shield:
                 {
-
+                    // Check if shield + value > 100f
                     if(shield + value > 100f)
                     {
-
+                        // reset shield
                         shield = 100f; 
 
                     }
                     else
-                    {
+                    {   // add to shield
                         shield += value; 
                     }
 
